@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>ÜYE KAYIT FORMU</h1>
+        <form name="kayit" action="kayit.php" method="GET"><!--GET KOMUTU ADRES ÇUBUĞUNA GÖRÜNÜR ŞEKİLDE GÖNDERİR VERİŞERİ-->
+           AD SOYAD: <input type="text" name="adsoyad" size="10" maxlength="40" required>
+           <br>
+           <!-- AD SOYAD karşısında kullanıcıdan alınacak input   
+    size-metin kutusundaki görünen uzunluk
+     maxlength -metin kutusundaki max uzunluk 
+     required -metin kutusuna metin girme zorunlu-->
+           EMAİL: <input type="email" name="email" id="email" required><br>
+           WEBSİTE:<input type="url" name="ADRES" id="ADRES"><br>
+           <input type="submit" value="TAMAM">  <!--SUBMİT-action ile belirlenen sayfaya gönderilmesi için onay kutusu
+                                                  VALUE-gönderilme butonu ismini değiştirir-->
+           <input type="reset" value="temizle">
+        </form> 
+          
+    </body>
+</html>
