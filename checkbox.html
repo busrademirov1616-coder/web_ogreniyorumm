@@ -6,20 +6,35 @@
     <body>
         <h1>ONAY KUTUSU</h1>
         <form name="onay">
-            <input type="checkbox" name="kanal"> KANALA ABONE OL <!--checkbox onay kutusu komutu-->
+            <input type="checkbox" name="kanal"> KANALA ABONE OL <!--checkbox onay kutusu komutu
+                                                                     her bir maddenin name değerleri farklı olmalı-->
             <br>
             <input type="submit">
         </form>
-        <h1>SEÇENEK KUTUSU</h1>
+        <h1>SEÇENEK KUTUSU</h1>                                  <!--radio seçenek kutusu komutu
+                                                                    seçeneklerin name değerleri aynı olmalı çünkü tüm seçenekler tek bir özelliğe ait -->
         <form name="secenek">
             <h2>CİNSİYETİN NE</h2>
             KADIN
-            <input type="radio" name="cinsiyet" value="KADIN">
+            <input type="radio" name="cinsiyet" value="KADIN">    <!--name için input değerinin değişken adı denebilir -url kısmında seçim görünüyor-->
             ERKEK
             <input type="radio" name="cinsiyet" value="ERKEK">
             <br>
             <input type="submit">
 
+        </form>
+        <h1>SEÇENEK LİSTESİ</h1>
+        <form>
+            <select name="renk" id="renk" >
+                <option>KIRMIZI</option>
+                <option>MAVİ</option>
+                <option>MOR</option>
+                <option>SARI</option>
+                <option>TURKUAZ</option>
+                <option>LİLA</option>
+                <option selected>TURUNCU</option> <!-- selected - varsayılan seçenek komutu-->
+            </select>
+            <input type="submit">
         </form>
     </body>
 </html>
